@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".ui.sumbit.SubmitActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_medium"
+            android:text="@string/project_submission"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/margin_padding_size_xxlarge"
+            android:layout_marginEnd="@dimen/margin_padding_size_xxlarge"
+            android:background="@drawable/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_medium"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_submit_first_name_text_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/margin_padding_size_micro"
+                android:inputType="textPersonName"
+                android:theme="@style/temp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/color_secondary_text"
+                    android:theme="@style/edit_text_style" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_submit_last_name_text_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_padding_size_micro"
+                android:layout_weight="1"
+                android:theme="@style/text_input_layout_style">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/color_secondary_text" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_submit_email_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_medium"
+            android:theme="@style/text_input_layout_style">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/color_secondary_text"
+                android:theme="@style/edit_text_style" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/activity_submit_link_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_medium"
+            android:theme="@style/text_input_layout_style">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/link"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/color_secondary_text"
+                android:theme="@style/edit_text_style" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/activity_submit_button"
+            style="@style/button_style_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_size_small"
+            android:paddingStart="@dimen/margin_padding_size_xxlarge"
+            android:paddingEnd="@dimen/margin_padding_size_xxlarge"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/progressbar"
+        android:visibility="gone" />
+</FrameLayout>

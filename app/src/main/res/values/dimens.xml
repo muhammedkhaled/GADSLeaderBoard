@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_padding_size_semi_micro">2dp</dimen>
+    <dimen name="margin_padding_size_micro">4dp</dimen>
+    <dimen name="margin_padding_size_small">8dp</dimen>
+    <dimen name="margin_padding_size_medium">16dp</dimen>
+    <dimen name="margin_padding_size_large">24dp</dimen>
+    <dimen name="margin_padding_size_xlarge">28dp</dimen>
+    <dimen name="margin_padding_size_xxlarge">32dp</dimen>
+    <dimen name="text_size_micro">8sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_medium">12sp</dimen>
+    <dimen name="text_size_large">14sp</dimen>
+    <dimen name="text_size_xlarge">16sp</dimen>
+</resources>

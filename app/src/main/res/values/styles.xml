@@ -1,0 +1,59 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="button_style_orange">
+        <item name="android:background">@drawable/button_orange_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+
+    <style name="text_input_layout_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/orange</item>
+        <item name="startIconTint">@color/orange</item>
+        <item name="hintTextColor">@color/orange</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="colorControlHighlight">@color/progress_color</item>
+    </style>
+
+    <style name="temp" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/orange</item>
+        <item name="strokeWidth">@dimen/margin_padding_size_micro</item>
+        <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="maxLines">1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/color_secondary_text</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+</resources>
