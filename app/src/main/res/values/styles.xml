@@ -21,7 +21,7 @@
     </style>
 
 
-    <style name="text_input_layout_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <style name="text_input_layout_style" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
         <item name="boxStrokeColor">@color/orange</item>
         <item name="startIconTint">@color/orange</item>
         <item name="hintTextColor">@color/orange</item>

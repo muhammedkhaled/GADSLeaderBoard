@@ -46,7 +46,7 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="@dimen/margin_padding_size_micro"
                 android:inputType="textPersonName"
-                android:theme="@style/temp">
+                android:theme="@style/text_input_layout_style">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
